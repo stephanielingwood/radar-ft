@@ -1,0 +1,6 @@
+<testsuite name="Mocha Tests" tests="4" failures="0" errors="0" skipped="0" timestamp="Thu, 13 Aug 2015 23:32:26 GMT" time="15.805">
+<testcase classname="Index" name="renders something" time="0.161"/>
+<testcase classname="Open issues" name="renders open issues info" time="1.995"/>
+<testcase classname="Closed issues" name="renders closed issues info" time="13.172"/>
+<testcase classname="Failed auth" name="Should not render issues page, instead main page" time="0.469"/>
+</testsuite>
