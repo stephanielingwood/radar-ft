@@ -7,7 +7,7 @@ node_js:
 
 env:
     - XUNIT_FILE=./shippable/testresults/result.xml
-    - URL=http://104.236.198.94:17210 #url of the deployed formation
+    - URL=http://104.236.198.94:25324  #url of the deployed formation
     - secure: VLEoWXKAou8aiwdMoOTudhG2wGS1I4Y1JVRJylls8MYWtQIiSR1rfKI7liaA2qoABRRoFZAy7uvkTGnAzjys49psZYaLFtaXIfgbw25hl4MCyckxnAW/Qul5q1xdUI2T6kDrRHvLNHj8n2ghWzU1j1c0/gTBDztsF0OD9kOkiF0JcLcbG2nKljKzcmIbdi3q0xQt6B5TJsfV76zQ6BYDAYPOrQnHFTdM/NFMoOPoBChT/7nPaJ4bDXPeILvHgtxhHCSDtBUAUvqTVuYqEZX6gGrN0CfZUfaS4BQxeJ9DBnYzoTJANJjO4msnHYuivpJBaCNpOBc+5Sc19bGjVDfxgg== #encrypted variable TOKEN
     # TOKEN is a GitHub token for the subscription triggering the build
 
