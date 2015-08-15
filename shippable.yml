@@ -11,7 +11,7 @@ services:
 
 env:
   global:
-    - API_URL: #api url
+    - WWW_URL= #www url
     - secure: #encryped var
     # TOKEN is a GitHub token for the subscription triggering the build
 
