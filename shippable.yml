@@ -1,28 +1,36 @@
-# language setting
 language: node_js
 
-# version numbers, testing against one version of node
 node_js:
-    - 0.10.33
+  - "0.10"
+
+addons:
+  firefox: "19.0"
+
+services:
+  - selenium
 
 env:
-    - XUNIT_FILE=./shippable/testresults/result.xml
-    - URL=http://104.236.198.94:17210 #url of the deployed formation
-    - secure: #encrypted variable TOKEN
+  global:
+    - API_URL: #api url
+    - secure: #encryped var
     # TOKEN is a GitHub token for the subscription triggering the build
 
-before_install:
-    - node --version
-    - npm install -g grunt-cli
-    - mkdir -p ./shippable/testresults
-    - mkdir -p ./shippable/codecoverage
-
 install:
-    - npm install
+  - npm install -g istanbul
+  - npm install -g protractor
+  - npm install jasmine-reporters@1.0.0
+
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+  - "export DISPLAY=:99.0"
+  - "/etc/init.d/xvfb start"
 
 script:
-    - grunt
+  - protractor --version
+  - protractor conf.js
 
 after_script:
-    - ./node_modules/.bin/istanbul cover grunt -- -u tdd
-    - ./node_modules/.bin/istanbul report cobertura --dir  ./shippable/codecoverage/
+  - "/etc/init.d/xvfb stop"
+  - istanbul cover conf.js -- -u tdd
+  - istanbul report cobertura --dir  shippable/codecoverage/
