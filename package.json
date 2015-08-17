@@ -1,29 +1,7 @@
 {
   "name": "radar-ft",
-  "version": "1.0.0",
-  "description": "Demo functional tests for the Shippable Radar app",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shippablesamples/radar-ft.git"
-  },
-  "author": "Shippable",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shippablesamples/radar-ft/issues"
-  },
-  "homepage": "https://github.com/shippablesamples/radar-ft#readme",
-  "devDependencies": {
-    "chai": "^3.0.0",
-    "grunt": "^0.4.0",
-    "grunt-express-server": "^0.5.1",
-    "grunt-simple-mocha": "^0.4.0",
-    "istanbul": "^0.3.14",
-    "mocha": "^2.2.5",
-    "should": "^6.0.3",
-    "superagent": "^1.2.0",
-    "xunit-file": "0.0.6"
-  }
+  "version": "0.0.1",
+  "keywords": [],
+  "description": "radar functional tests",
+  "contributors": []
 }
